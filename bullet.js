@@ -75,12 +75,12 @@ class Bullet
           if(bulletTop<targetTop && bulletTop>targetTop-60 && bulletLeft>targetLeft-2 && bulletLeft<targetLeft+42 && monster.alive == true)
           {
             monster.alive = false;
-            monster.image.attr('src','death.gif');
-            setTimeout(function(){monster.image.attr('src','transparent.png')},500);
+            monster.image.attr('src','pic/death.gif');
+            setTimeout(function(){monster.image.attr('src','pic/transparent.png')},500);
             setTimeout(function(){monster.image.remove()},500);
             this.game.updateScore();
             this.game.checkMonstersLeft();
-            var music = new Audio('death1.mp3');
+            var music = new Audio('music/death1.mp3');
             music.volume = 0.4
             music.play();
             monsterRow.killMonster();
@@ -100,10 +100,10 @@ class Bullet
       if(bulletTop>top && bulletTop<top+70 && bulletLeft>left+4 && bulletLeft<left+46)
       {
         var image = $('#space_ship_image');
-        image.attr('src','death.gif');
-        setTimeout(function(){image.attr('src','space_ship.gif')},1000);
+        image.attr('src','pic/death.gif');
+        setTimeout(function(){image.attr('src','pic/space_ship.gif')},1000);
         this.game.loseLife(this.game);
-        var music = new Audio('shipdeath2.wav');
+        var music = new Audio('music/death2.wav');
         music.volume = 0.6
         music.play();
         return true;

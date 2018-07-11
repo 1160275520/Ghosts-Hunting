@@ -28,7 +28,7 @@ class SpaceShip
   {
     if (!this.game.over)
     {
-      var music = new Audio('shoot.wav');
+      var music = new Audio('music/shoot.wav');
       music.volume = 0.38
       music.play();
       var bullet = $('<div class="bullet"></div>');

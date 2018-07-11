@@ -18,7 +18,7 @@ class MonsterRow
     var monsters=[];
     for(var index=0; index<10; index++)
     {
-      var monsterID = $('<div class="image"><img id="'+this.name+index+'" src="'+this.name+'.gif" width="'+this.size+'px" height="75px"></div>');
+      var monsterID = $('<div class="image"><img id="'+this.name+index+'" src="pic/'+this.name+'.gif" width="'+this.size+'px" height="75px"></div>');
       $('.'+this.name).append(monsterID);
       var monster = new Monster('#'+this.name+index);
       monsters.push(monster);    

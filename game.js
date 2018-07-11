@@ -82,7 +82,7 @@ class Game
     this.livesHTML()
     $('.level').append('<div>Level: '+this.level+'</div>');
     $('.score').append('<div>Score: '+this.score+'</div>');
-    $('#space_ship').append('<img id="space_ship_image" src="space_ship.gif" width="50px">');
+    $('#space_ship').append('<img id="space_ship_image" src="pic/space_ship.gif" width="50px">');
     var self = this;
     setTimeout(function(){self.monsterShoot(self)}, 1000);
   }
@@ -92,18 +92,18 @@ class Game
     $('.lives').append('<div>Lives:</div>');
     if (this.numLives==3)
     {
-      $('.lives').append('<div><img id="1st" src="life.gif" width="30px"></div>');
-      $('.lives').append('<div><img id="2nd" src="life.gif" width="30px"></div>');
-      $('.lives').append('<div><img id="3rd" src="life.gif" width="30px"></div>');
+      $('.lives').append('<div><img id="1st" src="pic/life.gif" width="30px"></div>');
+      $('.lives').append('<div><img id="2nd" src="pic/life.gif" width="30px"></div>');
+      $('.lives').append('<div><img id="3rd" src="pic/life.gif" width="30px"></div>');
     }
     else if (this.numLives==2)
     {
-      $('.lives').append('<div><img id="1st" src="life.gif" width="30px"></div>');
-      $('.lives').append('<div><img id="2nd" src="life.gif" width="30px"></div>');
+      $('.lives').append('<div><img id="1st" src="pic/life.gif" width="30px"></div>');
+      $('.lives').append('<div><img id="2nd" src="pic/life.gif" width="30px"></div>');
     }
     else
     {
-      $('.lives').append('<div><img id="1st" src="life.gif" width="30px"></div>');
+      $('.lives').append('<div><img id="1st" src="pic/life.gif" width="30px"></div>');
     }
   }
 
@@ -111,12 +111,12 @@ class Game
   {
     if (this.level<=10)
     {
-      $('body').css('background-image', 'url(background'+this.level+'.jpg)');        
+      $('body').css('background-image', 'url(pic/background'+this.level+'.jpg)');        
     }
     else
     {
       var backgroundNum = Math.floor((Math.random() * 10))+1;
-      $('body').css('background-image', 'url(background'+backgroundNum+'.jpg)');        
+      $('body').css('background-image', 'url(pic/background'+backgroundNum+'.jpg)');        
     }
 
   }

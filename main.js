@@ -70,7 +70,7 @@ class Main
     var picNum = Math.floor((Math.random() * 10)) + 1;
     $('body').append('<div class="game_over"></div>')
     $('.game_over').append('<div class="text title">Game Over</div>');
-    $('.game_over').append('<div id="game_over_image"><img src="'+picNum+'.gif" width="400px"></div>');
+    $('.game_over').append('<div id="game_over_image"><img src="pic/'+picNum+'.gif" width="400px"></div>');
     $('.game_over').append('<div class = "scores"></div>');
     $('.scores').append('<div class = "text" id="score">Your Score: '+score+'</div>');
     $('.game_over').append('<div class="container topBotomBordersOut" id="game_over"><a>Play Again</a></div>');
@@ -93,7 +93,7 @@ function welcomeHTML()
   var picNum = Math.floor((Math.random() * 10)) + 1;
   $('body').append('<div class="welcome"></div>')
   $('.welcome').append('<div class="text title">GHOSTS HUNTING</div>');
-  $('.welcome').append('<div id="welcome_image"><img src="'+picNum+'.gif" width="400px"></div>');
+  $('.welcome').append('<div id="welcome_image"><img src="pic/'+picNum+'.gif" width="400px"></div>');
   $('.welcome').append('<div class="container topBotomBordersOut" id="start"><a>Start Game</a></div>');
   $('#start').click(function(){
     $('.welcome').remove();
@@ -103,7 +103,7 @@ function welcomeHTML()
 
 
 function playGame(){
-  music = new Audio('music.mp3');
+  music = new Audio('music/music.mp3');
   music.play();
   main = new Main();
   if(playAgain)
