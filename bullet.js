@@ -46,7 +46,7 @@ class Bullet
       self.bullet.css('top',(top+this.speed)+'px');
       //if the bullet does not shoot the space ship and it is still in the space of the screen, 
       //the bullet continue to move
-      if (!this.checkShootSpaceShip() && top < 1000)
+      if (!this.checkShootSpaceShip() && top < 900)
       {
         setTimeout(function(){self.moveDown(self)},100);
       }
