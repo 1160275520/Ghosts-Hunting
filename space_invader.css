@@ -51,6 +51,7 @@ body
     background-color: white;
     position:fixed;
     transition: top 0.15s;
+    z-index:20;
 }
 
 .ghosts,.mushrooms,.donuts,.pinkmans,.pizzas,.carrots,.yellows
