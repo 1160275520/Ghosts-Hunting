@@ -19,7 +19,7 @@ class Main
     var picNum = Math.floor((Math.random() * 10)) + 1;
     $('body').append('<div class="continue"></div>')
     $('.continue').append('<div class="text title">You kill all the monsters!</div>');
-    $('.continue').append('<div id="welcome_image"><img src="'+picNum+'.gif" width="400px"></div>');
+    $('.continue').append('<div id="welcome_image"><img src="pic/'+picNum+'.gif" width="400px"></div>');
     $('.continue').append('<div class="container topBotomBordersOut" id="continue"><a>Continue</a></div>');
     $('#continue').click(function(){
       main.nextGame(game);
