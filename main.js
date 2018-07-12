@@ -104,6 +104,7 @@ function welcomeHTML()
 
 function playGame(){
   music = new Audio('music/music.mp3');
+  music.loop = true;
   music.play();
   main = new Main();
   if(playAgain)
